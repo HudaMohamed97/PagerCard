@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/cardTypeBtn"
+            style="@style/ButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fragments" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Scale" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:layout_gravity="bottom"
+            android:clipToPadding="true"
+            android:overScrollMode="never"
+            android:paddingBottom="30dp" />
+
+        <ImageButton
+            android:id="@+id/left_nav"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical|left"
+            android:src="@drawable/ic_bookmark_24dp" />
+
+        <ImageButton
+            android:id="@+id/right_nav"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical|right"
+            android:src="@drawable/ic_bookmark_24dp" />
+
+    </FrameLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
